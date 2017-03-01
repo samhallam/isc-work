@@ -6,7 +6,7 @@ with open ('weather.csv', 'r') as reader:
 
 # reading line by line
 
-with open ('weather.csv', 'r')as reader:
+with open ('weather.csv', 'r') as reader:
     line = reader.readline()
     while line:
           print line
@@ -15,9 +15,9 @@ print "it's over"
 
 # reading lines
 
-with open ('weather.csv', 'r')as reader:
-    lines = reader.readlines()
+with open ('weather.csv', 'r') as reader:
+    #lines = reader.readlines()
           
-    lines2 = reader.readlines()[3:]
+    lines = reader.readlines()[-1]
   
-print lines2
+print lines
