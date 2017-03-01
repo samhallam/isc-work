@@ -1,0 +1,10 @@
+#tuples
+
+t=(1,)
+print t
+
+list = range[100,201,1]
+t= tuple(list)
+print t(0)
+print t(-1)
+
