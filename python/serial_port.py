@@ -35,3 +35,13 @@ with open(outfile,'a') as f: #appends to existing file
 ser.close()
 
 # tail- f  '/tmp/serial-temperature.tsv'
+
+
+import csv
+
+with open('/tmp/serial-temperature.tsv') as f:
+    reader = csv.reader(f, delimiter='\t')
+    for row in reader:
+        print row
+
+
